@@ -35,32 +35,45 @@ Project created with:
 * [geographiclib](https://geographiclib.sourceforge.io/) [2.0](https://github.com/geographiclib/geographiclib-python/releases/tag/v2.0)
 	
 ## Setup
-To run this project, install it locally using git, pip and python:
+### Windows
+* [Download this project](https://github.com/Zeerck/MyWeather/archive/refs/heads/master.zip).
+* Unpack anywhere you want.
+* Install [Python 3.10](https://www.python.org/downloads/).
+* For automatically start, use 'Weather.bat'.
+
+
+* For manually start, use [Command Line](https://en.wikipedia.org/wiki/Cmd.exe) or [PowerShell](https://en.wikipedia.org/wiki/PowerShell)
+in project directory. After, type:
+```commandline
+python -m pip install -r requirements.txt
+```
+* That command will install or update dependencies.
+
+Run:
+```commandline
+python weather.py
+```
+* This will launch the program.
+
+This method tested only on Windows 10. Its may different in other systems.
 
 ### Linux
+* Use that three commands:
 ```bash
 $ git clone https://github.com/Zeerck/MyWeather
 $ pip install -r requirements.txt
 $ python3 weather.py
 ```
+* Enjoy.
 
-### Windows
-Install [Python 3.10](https://www.python.org/downloads/) after,
-run [Command Line](https://en.wikipedia.org/wiki/Cmd.exe) or [PowerShell](https://en.wikipedia.org/wiki/PowerShell)
-in directory with project.
-
-Type:
-```commandline
-python -m pip install -r requirements.txt
-```
-That command will install or update dependencies.
-
-Next type:
-```commandline
-python weather.py
-```
+## Recommendations
+If you live in Russia, please using VPN. OpenWeatherMap API may don't work in that country.
 
 ## Sources
-Using [Python documentation](https://docs.python.org/3/),
+Used [Python documentation](https://docs.python.org/3/),
 [geopy documentation](https://geopy.readthedocs.io/),
 [OpenWeatherMap documentation](https://openweathermap.org/api/one-call-3) and etc.
+
+## P.s.
+The author is not a professional in Python programming.
+There may gross errors in logic, naming violations and other unpleasant things.
