@@ -14,12 +14,20 @@ def get_city_coordinates() -> Coordinates:
     try:
         geolocator = Nominatim(user_agent="coordinates")
         user_answer = input("Enter city name to get weather: ")
-        config.CITY = user_answer
         location = geolocator.geocode(user_answer)
+        config.CITY_NAME = get_city_name(location.raw["display_name"])
         print(f"Location: {location}\nLatitude: {location.latitude}, Longitude: {location.longitude}")
         return Coordinates(longitude=location.longitude, latitude=location.latitude)
     except AttributeError:
         raise CantGetCity
+
+
+def get_city_name(location: dict) -> str:
+    city_name, num = "", 0
+    while location[num] != ',':
+        city_name += str(location[num])
+        num += 1
+    return city_name
 
 
 def _round_coordinates(coordinates: Coordinates) -> Coordinates:

@@ -10,8 +10,8 @@ def main():
     try:
         city_coordinates = get_city_coordinates()
     except CantGetCity:
-        print("The city could not be found."
-              "Maybe you made a mistake in the name of the city"
+        print("The city could not be found. "
+              "Maybe you made a mistake in the name of the city "
               "or the OpenWeather service is not available.")
         exit(1)
     try:
