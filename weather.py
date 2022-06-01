@@ -17,7 +17,7 @@ def main():
     try:
         weather = get_weather(city_coordinates)
     except ApiServiceError:
-        print(f"Unable to get weather data for your city ({config.CITY}).")
+        print(f"Unable to get weather data for your city ({config.CITY_NAME}).")
         exit(1)
     print(weather_format(weather))
 
