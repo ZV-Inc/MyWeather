@@ -79,7 +79,7 @@ class WeatherType(Enum):
     # Clouds\Облачно
     FEW_CLOUDS = "Few clouds"   # "Малооблачно"
     SCATTERED_CLOUDS = "Scattered clouds"   # "Рассеянные облака"
-    BROKEN_CLOUDS = "Broken clouds"   # "Разорванные облака"
+    BROKEN_CLOUDS = "Broken clouds"   # "Рваные облака"
     OVERCAST_CLOUDS = "Overcast clouds"   # "Пасмурно"
 
 
